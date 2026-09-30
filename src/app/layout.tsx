@@ -10,8 +10,8 @@ const dmSans = DM_Sans({
 
 
 export const metadata: Metadata = {
-  title: "Studzee",
-  description: "Studzee is a full-stack SaaS educational platform designed to transform how educational content is created, structured, delivered, and consumed across multiple platforms."
+  title: "Hexlab",
+  description: "Hexlab is a modern SaaS landing page built with Next.js — fast, responsive, and conversion-focused."
 };
 
 export default function RootLayout({
