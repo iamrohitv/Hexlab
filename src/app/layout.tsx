@@ -24,9 +24,9 @@ export default function RootLayout({
       <body
         className={`${dmSans.className} antialiased w-full min-h-screen overflow-x-hidden`}
       >
-        {/* <LenisProvider> */}
+        <LenisProvider>
           {children}
-        {/* </LenisProvider> */}
+        </LenisProvider>
       </body>
     </html>
   );

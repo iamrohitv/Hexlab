@@ -32,13 +32,13 @@ const settings = {
       'client-site.io',
     ],
     avatars: [
-      'https://avatar.iran.liara.run/public/38',
-      'https://avatar.iran.liara.run/public/40',
-      'https://avatar.iran.liara.run/public/22',
-      'https://avatar.iran.liara.run/public/6',
-      'https://avatar.iran.liara.run/public/12',
-      'https://avatar.iran.liara.run/public/37',
-      'https://avatar.iran.liara.run/public/35'
+      'https://i.pinimg.com/736x/f7/d8/f2/f7d8f2df2827bd6f8e0e95b12434ceab.jpg',
+      'https://i.pinimg.com/736x/f7/d8/f2/f7d8f2df2827bd6f8e0e95b12434ceab.jpg',
+      'https://i.pinimg.com/736x/f7/d8/f2/f7d8f2df2827bd6f8e0e95b12434ceab.jpg',
+      'https://i.pinimg.com/736x/f7/d8/f2/f7d8f2df2827bd6f8e0e95b12434ceab.jpg',
+      'https://i.pinimg.com/736x/f7/d8/f2/f7d8f2df2827bd6f8e0e95b12434ceab.jpg',
+      'https://i.pinimg.com/736x/f7/d8/f2/f7d8f2df2827bd6f8e0e95b12434ceab.jpg',
+      'https://i.pinimg.com/736x/f7/d8/f2/f7d8f2df2827bd6f8e0e95b12434ceab.jpg',
     ]
   },
   card_2: {
