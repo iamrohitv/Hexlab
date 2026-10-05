@@ -11,7 +11,7 @@ const settings = {
     text: 'GOOD COMPANY',
   },
   title: 'Join Happy Customers',
-  description: 'Hundreds of millions of page views for thousands of sites are collected with Pirsch Analytics each month — see what our customers have to say.',
+  description: 'Hundreds of millions of page views for thousands of sites are collected with Pirsch Analytics each month. See what our customers have to say.',
   testimonials: [
     {
       quote:
