@@ -12,7 +12,7 @@ import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 
 const settings = {
   headline: 'Hello YouTube',
-  subheadline: 'Privacy-friendly web analytics made and hosted in Germany — powerful, cookie-free, and fully compliant with GDPR, CCPA, and PECR.',
+  subheadline: 'Privacy-friendly web analytics made and hosted in Germany, powerful, cookie-free, and fully compliant with GDPR, CCPA, and PECR.',
   mainCTA: {
     content: 'try it for free',
     href: '#'

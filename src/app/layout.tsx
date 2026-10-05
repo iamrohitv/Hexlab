@@ -11,7 +11,7 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: "Hexlab",
-  description: "Hexlab is a modern SaaS landing page built with Next.js — fast, responsive, and conversion-focused."
+  description: "Hexlab is a modern SaaS landing page built with Next.js, fast, responsive, and conversion-focused."
 };
 
 export default function RootLayout({
