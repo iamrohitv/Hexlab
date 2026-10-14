@@ -3,6 +3,7 @@
 import Badge from "@/components/badge"
 import Card from "@/components/card"
 import Carousel from "@/components/carousel"
+import { GoLogo, LaravelLogo, ReactLogo, SvelteLogo, VueLogo } from "@/components/logos"
 import SlideEffect from "@/components/slide-effect"
 import Image from "next/image"
 
@@ -16,15 +17,12 @@ const settings = {
   card_1: {
     title: 'Effortless Setup',
     content: 'Pirsch offers plugins, libraries, and tutorials for the most popular CMSs, website builders, and programming languages to get you up and running in no time.',
-    carousel_images: [
-      'https://cdn.worldvectorlogo.com/logos/react-2.svg',
-      'https://cdn.worldvectorlogo.com/logos/vue-9.svg',
-      'https://cdn.worldvectorlogo.com/logos/angular-icon-1.svg',
-      'https://cdn.worldvectorlogo.com/logos/nestjs.svg',
-      'https://cdn.worldvectorlogo.com/logos/laravel-2.svg',
-      'https://cdn.worldvectorlogo.com/logos/svelte-1.svg',
-      'https://cdn.worldvectorlogo.com/logos/golang-1.svg',
-      'https://cdn.worldvectorlogo.com/logos/rust.svg',
+    carousel_logos: [
+      ReactLogo,
+      VueLogo,
+      LaravelLogo,
+      SvelteLogo,
+      GoLogo,
     ]
   },
   card_2: {
@@ -65,7 +63,7 @@ export default function Features1() {
           <Card>
             <h3 className="text-xl md:text-title text-black font-medium">{settings.card_1.title}</h3>
             <p className="mb-4">{settings.card_1.content}</p>
-            <Carousel images={settings.card_1.carousel_images} />
+            <Carousel logos={settings.card_1.carousel_logos} />
           </Card>
         </SlideEffect>
 

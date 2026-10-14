@@ -1,9 +1,15 @@
 'use client'
 
 import * as motion from "motion/react-m"
+import type { SVGProps } from "react"
 import Image from 'next/image'
 
-export default function Carousel({ images, itemWidth = 40, itemHeight = 40, spacing = 60 }: { images: string[], itemWidth?: number, itemHeight?: number, spacing?: number }) {
+type LogoComponent = (props: SVGProps<SVGSVGElement>) => React.JSX.Element
+
+export default function Carousel({ images, logos, itemWidth = 40, itemHeight = 40, spacing = 60 }: { images?: string[], logos?: LogoComponent[], itemWidth?: number, itemHeight?: number, spacing?: number }) {
+
+  const logoCount = logos?.length ?? 0
+  const imageCount = images?.length ?? 0
 
   return (
     <div className="overflow-hidden w-full relative h-full">
@@ -11,9 +17,9 @@ export default function Carousel({ images, itemWidth = 40, itemHeight = 40, spac
       <div className='w-16 h-full absolute top-0 right-0 bg-gradient-to-l from-secondary to-transparent z-20'></div>
 
       <motion.div
-        className="flex space-x-0 h-fit"
+        className="flex space-x-0 h-fit items-center"
         animate={{
-          x: `-${(itemWidth + spacing) * images.length - (itemWidth / 2)}px`,
+          x: `-${(itemWidth + spacing) * (imageCount + logoCount) - (itemWidth / 2)}px`,
         }}
         transition={{
           duration: 15, // Adjust speed as needed
@@ -22,7 +28,7 @@ export default function Carousel({ images, itemWidth = 40, itemHeight = 40, spac
           delay: 0.5
         }}
       >
-        {images.map((img, index) => (
+        {images?.map((img, index) => (
           <Image
             src={img}
             alt={`Image ${index + 1}`}
@@ -37,7 +43,7 @@ export default function Carousel({ images, itemWidth = 40, itemHeight = 40, spac
             className='w-full h-20'
           />
         ))}
-        {images.map((img, index) => (
+        {images?.map((img, index) => (
           <Image
             src={img}
             alt={`Image ${index + 1}`}
@@ -50,6 +56,32 @@ export default function Carousel({ images, itemWidth = 40, itemHeight = 40, spac
               marginLeft: `${spacing}px`,
             }}
             className='w-full h-full'
+          />
+        ))}
+        {logos?.map((Logo, index) => (
+          <Logo
+            key={`logo-a-${index}`}
+            width={itemWidth}
+            height={itemHeight}
+            style={{
+              width: `${itemWidth}px`,
+              height: `${itemHeight}px`,
+              marginLeft: `${spacing}px`,
+              flexShrink: 0,
+            }}
+          />
+        ))}
+        {logos?.map((Logo, index) => (
+          <Logo
+            key={`logo-b-${index}`}
+            width={itemWidth}
+            height={itemHeight}
+            style={{
+              width: `${itemWidth}px`,
+              height: `${itemHeight}px`,
+              marginLeft: `${spacing}px`,
+              flexShrink: 0,
+            }}
           />
         ))}
       </motion.div>
